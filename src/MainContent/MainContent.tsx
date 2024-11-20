@@ -1,6 +1,6 @@
 import { Form } from '../Form';
 import { useAppContext } from '../AppContext';
-import { FormatNumber } from '../FormatNumber';
+import { Format } from '../Format';
 import { FetchPosts } from '../FetchPosts';
 
 import { StyledBox, StyledContainer } from './styles';
@@ -12,7 +12,7 @@ export const MainContent = () => {
     <StyledBox>
       <StyledContainer>
         {task === 'form' && <Form type={layoutType} />}
-        {task === 'formatNumber' && <FormatNumber format={formatType} />}
+        {task === 'format' && <Format format={formatType} />}
         {task === 'fetch' && <FetchPosts />}
       </StyledContainer>
     </StyledBox>

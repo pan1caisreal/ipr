@@ -50,7 +50,7 @@ export const Header = () => {
           </NavButton>
         </Box>
       )}
-      {task === 'formatNumber' && (
+      {task === 'format' && (
         <Box>
           <NavButton
             $isActive={formatType === 'localeString'}
@@ -75,7 +75,7 @@ export const Header = () => {
           labelId="select-label"
         >
           <MenuItem value="form">Form</MenuItem>
-          <MenuItem value="formatNumber">formatNumber</MenuItem>
+          <MenuItem value="format">format</MenuItem>
           <MenuItem value="fetch">fetch</MenuItem>
         </StyledSelect>
       </FormControl>
